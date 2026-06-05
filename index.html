@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        
+        transition: font-size 0.5s ease;
+    }
+    a:hover{
+        font-size: 125%;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-name: pulsando;
+        animation-duration: 1s;
+    }
+    @keyframes pulsando {
+        from{
+            font-weight: 1000;
+            color: var(--color-green-300);
+        }
+        to{
+            font-weight: 500;
+            color: var(--color-green-400);
+        }
+    }
+    #titulo{
+        margin-left:10%;
+        animation-duration: 3s;
+        animation-name: slide;
+    }
+    @keyframes slide{
+        from{
+            margin-left: 100%;
+            width: 300%;
+        }
+        to{
+            margin-left: 0,125rem;
+            width: calc(1/2);
+        }
+    }
+    img{
+        animation-duration: 4s;
+        animation-name: fadeIn;
+        transition: 0.5s ease;
+    }
+    img:hover{
+        scale: 1.05;
+        box-shadow: 5px 5px 10px #2b2626;
+    }
+    @keyframes fadeIn{
+        from{
+            display: inline-flex;
+            margin-top: 200%;
+            opacity: 0;
+            top: 100%
+        }
+        to{
+            opacity: 1;
+            top: auto;
+        }
+    }
+    @keyframes blinking{
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0.8;
+        }
+    }
+</style>
+
+<body>
+    <header class="bg-cyan-600 w-full h-10 flex items-center justify-around">
+
+        <a class="text-green-100  duration-1000 hover:text-green-300 " href="javascript:history.back()">voltar</a>
+        <a class="text-green-100 duration-1000 hover:text-green-300 " href="sobre.html">Sobre</a>
+        <a class="text-green-100 duration-1000 hover:text-green-300 " href="https://www.instagram.com/marcos_augusto503/" target="_blank">instagram</a>
+
+    </header>
+    <div id="titulo" class="sm:ml-0 ml-1">
+  <h1 class="pl-12 w-full text-decoration-underline text-3xl ">
+    Bem vindo ao meu portifolio
+  </h1>
+  <br>
+  <p class="w-2/3">olá eu me chamo Marcos Augusto, sou aluno do IFS-CPP curso tecnico integrado em informatica, tenho 17 anos e procuro estagio para vaga de back-end, atualmente apresento habilidades em Python, Java e HTML. Alem disso, tenho conhecimentos em desenvolvimento web e sou apaixonado por tecnologia da informação. busco cada vez mais melhoras minhas habilidades na area.</p>
+  </div>
+  <img src="imgs/marcos.jpeg" alt="imagem de perfil" class="sm:w-2xs sm:h-86 w-auto h-72 rounded-full mt-10 right-0 absolute">
+</body>
+</html>
