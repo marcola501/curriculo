@@ -18,23 +18,23 @@
         display: none;
     }
     a{
-        transition: font-size 0.5s ease;
+        transition: font-size 1s ease;
     }
     a:hover{
         font-size: 125%;
         animation-iteration-count: infinite;
         animation-direction: alternate;
         animation-name: pulsando;
-        animation-duration: 1s;
+        animation-duration: 1.3s;
     }
     @keyframes pulsando {
         from{
             font-weight: 1000;
-            color: var(--color-green-300);
+            color: var(--color-blue-100)
         }
         to{
             font-weight: 500;
-            color: var(--color-green-400);
+            color: var(--color-blue-300);
         }
     }
     #titulo h1{
@@ -91,21 +91,25 @@
 <body>
     <header class="bg-cyan-600 w-full h-10 flex items-center justify-around">
 
-        <a class="text-green-100  duration-1000 hover:text-green-300 " href="javascript:history.back()">voltar</a>
-        <a class="text-green-100 duration-1000 hover:text-green-300 " href="sobre.html">Sobre</a>
-        <a class="text-green-100 duration-1000 hover:text-green-300 " href="https://www.instagram.com/marcos_augusto503/" target="_blank">instagram</a>
+        <a class="text-blue-100  duration-1000 hover:text-blue-300 " href="javascript:history.back()">voltar</a>
+        <a class="text-blue-100 duration-1000 hover:text-blue-300 " href="sobre.html">Sobre</a>
+        <a class="text-blue-100 duration-1000 hover:text-blue-300 " href="https://www.instagram.com/marcos_augusto503/" target="_blank">instagram</a>
 
     </header>
     
-    <div id="titulo" class="m-[2%] mx-[10%]">
+    <div id="titulo" class="ml-[10%]">
   <h1 class="text-3xl">
     Bem vindo ao meu portifolio
   </h1>
   <br>
   <p>olá eu me chamo Marcos Augusto, sou aluno do IFS-CPP curso tecnico integrado em informatica, tenho 17 anos e procuro estagio para vaga de back-end, atualmente apresento habilidades em Python, Java e HTML. Alem disso, tenho conhecimentos em desenvolvimento web e sou apaixonado por tecnologia da informação. busco cada vez mais melhoras minhas habilidades na area.</p> 
+  <div class="w-full flex ">
+  <p id="titulo" class=" w-1/2 ml-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis perspiciatis odio? Reprehenderit temporibus, eligendi rerum tempora rem minima magnam? Totam molestias incidunt neque voluptate eos, cupiditate repudiandae dignissimos eveniet!</p>
+<img src="imgs/marcos.jpeg" alt="imagem de perfil" class="sm:w-auto sm:h-[35%] w-auto mt-[5%] h-[25%] rounded-full md:mt-10 right-0 m-0 absolute  mr-[5%]">
+</div>
 </div>
 
-  <img src="imgs/marcos.jpeg" alt="imagem de perfil" class="sm:w-2xs sm:h-86 w-auto h-72 rounded-full mt-10 right-0 absolute mr-32">  
+    
 
 
 </body>
